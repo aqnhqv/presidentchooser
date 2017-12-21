@@ -1,8 +1,29 @@
 body {
     background-color: #F8C471;
+    margin-bottom: 60px;
 }
 
-#title {
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.title {
     font-family: "comicsans";
     text-align: center
+}
+
+.firstHidden{
+	margin-top: 5%; 
+	display: none;
 }

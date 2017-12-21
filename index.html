@@ -46,13 +46,13 @@
 <body>
   <div class="container">
     <div class="row" style="margin-top: 10%">
-      <h1 id="title">President Chooser 2.0</h1>
+      <h1 id="title" class="title">President Chooser 2.0</h1>
     </div>
 
     <div id="main-panel" class="row" style="margin-top: 5%">
       <div class="col-sm-offset-3 col-sm-6">
         <div class="panel panel-default">
-          <div class="panel-heading"><strong>Elija su presidente</strong></div>
+          <div class="panel-heading"><h4>Elija su presidente</h4></div>
           <div class="panel-body">
             <div class="row">
               <div class="col-sm-6">
@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <div id="video-panel" class="row text-center" style="margin-top: 5%; display: none">
+    <div id="video-panel" class="row text-center firstHidden">
       <div class="col-sm-offset-3 col-sm-6">
         <video id="video-player" width="512" height="384">
           <source src="video.mp4" type="video/mp4">
@@ -97,12 +97,20 @@
     </div>
   </div>
 
-  <div id="result-panel" class="row" style="margin-top: 5%; display: none">
+  <div id="result-panel" class="row firstHidden">
     <div class="col-sm-offset-3 col-sm-6 text-center">
-      <h3 id="presidente"></h3>
-      <button id="reload-button" class="btn btn-lg btn-info" style="margin-top: 5%">Impugno el sorteo</button>
+      <strong><h2 class="title" id="presidente"></h3></strong>
+      <a class="btn btn-lg btn-info" style="margin-top: 5%" href="index.html">Impugno el sorteo</a>
     </div>
   </div>
+
+  <footer class="footer">
+      <div class="container">
+        <span class="text-muted">
+            LambdaSoft Team 2018.
+              <a href="http://github.com/bertini36/presidentchooser" target="_blank">Fork on GitHub <img src="img/github.png" style="height: 32px" /></a></span>
+          
+    </footer>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
           integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="

@@ -1,14 +1,17 @@
 inputs = [];
+$main_panel = $("#main-panel");
+$video_panel = $("#video-panel");
+$result_panel = $("#result-panel")
 
 $("#main-button").click(function() {
-    $("#main-panel").addClass("animated rollOut");
+    $main_panel.addClass("animated rollOut");
     inputs = getInputs();
-    $("#main-panel").remove();
-    $("#video-panel").css("display", "block");
-    $("#video-panel").addClass("animated rollIn");
+    $main_panel.remove();
+    $video_panel.css("display", "block");
+    $video_panel.addClass("animated rollIn");
     $("#video-player").get(0).play();
     var winner = inputs[random()-1];
-    $("#presidente").html("Presidente: " + winner);
+    $("#presidente").html("Habemus Presidente <br>" + winner);
 });
 
 function getInputs() {
@@ -26,13 +29,9 @@ function random() {
 
 document.getElementById("video-player").addEventListener('ended',myHandler,false);
 function myHandler(e) {
-    $("#video-panel").removeClass("animated rollIn");
-    $("#video-panel").addClass("animated rollOut");
-    $("#video-panel").remove();
-    $("#result-panel").css("display", "block");
-    $("#result-panel").addClass("animated rollIn");
+    $video_panel.removeClass("animated rollIn");
+    $video_panel.addClass("animated rollOut");
+    $video_panel.remove();
+    $result_panel.css("display", "block");
+    $result_panel.addClass("animated rollIn");
 }
-
-$("#reload-button").click(function() {
-   location.reload();
-});
