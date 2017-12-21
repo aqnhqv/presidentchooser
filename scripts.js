@@ -1,4 +1,4 @@
-inputs = [];
+var inputs = [];
 $main_panel = $("#main-panel");
 $video_panel = $("#video-panel");
 $result_panel = $("#result-panel")
@@ -10,7 +10,7 @@ $("#main-button").click(function() {
     $video_panel.css("display", "block");
     $video_panel.addClass("animated rollIn");
     $("#video-player").get(0).play();
-    var winner = inputs[random()-1];
+    var winner = inputs[random(inputs.length)-1];
     $("#presidente").html("Habemus Presidente <br>" + winner);
 });
 
@@ -23,8 +23,8 @@ function getInputs() {
     return results;
 }
 
-function random() {
-    return Math.floor(Math.random() * 6) + 1;
+function random(max) {
+    return Math.floor(Math.random() * max) + 1;
 }
 
 document.getElementById("video-player").addEventListener('ended',myHandler,false);
