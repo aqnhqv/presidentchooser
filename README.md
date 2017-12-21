@@ -1,4 +1,4 @@
-# presidentchooser
+# President Chooser 2.0
 Soy Concha, entro
 
 ## Creadores
