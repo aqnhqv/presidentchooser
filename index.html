@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>President Chooser</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Soy Concha, entro">
+  <meta name="author" content="Xisco Saster, Alberto Pou, Joan Font, Llorens Seguí, Toni Robles">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <style type="text/css">
+    @font-face {
+      font-family: "comicsans";
+      src: url(comicsans.ttf) format("truetype");
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row" style="margin-top: 10%">
+      <h1 id="title">President Chooser 2.0</h1>
+    </div>
+
+    <div id="main-panel" class="row" style="margin-top: 5%">
+      <div class="col-sm-offset-3 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>Elija su presidente</strong></div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" value="3A: Lucía Álvarez">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" value="2A: Juan Cuesta">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" value="1A: Vicenta Benito">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" value="3B: María Concepción de la Fuente">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" value="2B: Nieves Cuesta">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" value="1B: Mauricio Hidalgo">
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <button id="main-button" class="btn btn-lg btn-success">Niño dale a una tecla</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-panel" class="row text-center" style="margin-top: 5%; display: none">
+      <div class="col-sm-offset-3 col-sm-6">
+        <video id="video-player" width="512" height="384">
+          <source src="video.mp4" type="video/mp4">
+          <source src="video.ogv" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div id="result-panel" class="row" style="margin-top: 5%; display: none">
+    <div class="col-sm-offset-3 col-sm-6 text-center">
+      <h3 id="presidente"></h3>
+      <button id="reload-button" class="btn btn-lg btn-info" style="margin-top: 5%">Impugno el sorteo</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
