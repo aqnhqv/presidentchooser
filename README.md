@@ -1,13 +1,5 @@
 # President Chooser 2.0
 
-http://www.presidentchooser.com/
+https://presidentchooser.netlify.app/
 
-Soy Concha, entro
-
-## Creadores
-Xisco Sastre (https://github.com/xiscosc) <br>
-Alberto Pou (https://github.com/bertini36) <br>
-Joan Font (https://github.com/joanfont) <br>
-Llorens Seguí (https://github.com/llorenssegui) <br>
-Toni Robles (https://github.com/anthoitaker)
-    
+I am shell, I enter
